@@ -1,0 +1,47 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    function calc() {
+      var a = parseFloat(document.querySelector("#value1").value);
+      var b = parseFloat(document.querySelector("#value2").value);
+      var op = document.querySelector("#operator").value;
+      var calculate;
+
+      if (op == "add") {
+        calculate = a + b;
+      } else if (op == "min") {
+        calculate = a - b;
+      } else if (op == "div") {
+        calculate = a / b;
+      } else if (op == "mul") {
+        calculate = a * b;
+      }
+
+      var result = calculate.toFixed(2);
+      document.querySelector("#result1").value = result;
+    }
+  </script>
+</head>
+
+<body>
+  <form>
+    value 1: <input type="text" id="value1"><br /><br />
+    value 2: <input type="text" id="value2"><br /><br />
+
+    Operator:
+    <select id="operator">
+      <option value="add">Add</option>
+      <option value="min">Minus</option>
+      <option value="div">Divide</option>
+      <option value="mul">Multiply</option>
+    </select>
+    <button type="button" onclick="calc()">Calculate</button><br /><br />
+    value 3: <input type="text" id="result1"><br /><br />
+  </form>
+
+  <h1 id="result"></h1>
+</body>
+
+</html>
