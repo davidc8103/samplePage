@@ -4,6 +4,12 @@ body{
   background-color: #cbf1f5;
 }
 
+img:hover{
+  border-radius: 20%;
+  transition: transform 0.2s;
+  transform: scale(1.2);
+}
+
 hr{
   border-style: none;
   border-top-style: dotted;
