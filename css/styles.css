@@ -1,3 +1,5 @@
+
+/******************** Tag Selector*********************/
 body{
   background-color: #cbf1f5;
 }
@@ -10,6 +12,20 @@ hr{
   width: 5%;
 }
 
-h1, h3{
+h3{
   color: #66BFBF;
+}
+
+/******************** Class Selector *********************/
+.EC{
+  color: #ea6227;
+}
+
+.WE{
+  color: #363062;
+}
+
+/******************** ID Selector *********************/
+#Name{
+  color: #10375c;
 }
